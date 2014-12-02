@@ -1,0 +1,138 @@
+# Copyright (C) 2014 Post Meta Manager
+# This file is distributed under the same license as the Post Meta Manager package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Post Meta Manager 1.0.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/post-meta-manager\n"
+"POT-Creation-Date: 2014-12-02 18:44:20+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: post-meta-manager.php:95
+msgid "There was an error. Please try again."
+msgstr ""
+
+#: post-meta-manager.php:106
+msgctxt "Page title"
+msgid "Post Meta Manager"
+msgstr ""
+
+#: post-meta-manager.php:106
+msgctxt "Menu title"
+msgid "Post Meta Manager"
+msgstr ""
+
+#: post-meta-manager.php:109
+msgctxt "Page title"
+msgid "User Meta Manager"
+msgstr ""
+
+#: post-meta-manager.php:109
+msgctxt "Menu title"
+msgid "User Meta Manager"
+msgstr ""
+
+#: post-meta-manager.php:133 post-meta-manager.php:141
+#: post-meta-manager.php:149 post-meta-manager.php:197
+msgid "You must enter a value in this field"
+msgstr ""
+
+#: post-meta-manager.php:161
+msgid "There are no keys matching this criteria. Please try again."
+msgstr ""
+
+#: post-meta-manager.php:171
+msgid "%d entry has been updated."
+msgid_plural "%d entries have been updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: post-meta-manager.php:209
+msgid "There were no items with the %s meta key found. Please try again."
+msgstr ""
+
+#: post-meta-manager.php:218
+msgid "%d entry has been deleted."
+msgid_plural "%d entries have been deleted."
+msgstr[0] ""
+msgstr[1] ""
+
+#: post-meta-manager.php:231
+msgctxt "Title in options page"
+msgid "Post Meta Manager"
+msgstr ""
+
+#: post-meta-manager.php:235 post-meta-manager.php:312
+msgid "Use the fields below to change or delete post meta keys (custom fields) in bulk."
+msgstr ""
+
+#: post-meta-manager.php:240 post-meta-manager.php:317
+msgid "Change Meta Keys"
+msgstr ""
+
+#: post-meta-manager.php:244 post-meta-manager.php:321
+msgid "Existing Meta Key"
+msgstr ""
+
+#: post-meta-manager.php:247 post-meta-manager.php:324
+msgid "Enter the current meta key name you want to change"
+msgstr ""
+
+#: post-meta-manager.php:252 post-meta-manager.php:329
+msgid "New Meta Key Name"
+msgstr ""
+
+#: post-meta-manager.php:255 post-meta-manager.php:332
+msgid "Enter the new meta key name you want to use"
+msgstr ""
+
+#: post-meta-manager.php:262 post-meta-manager.php:339
+msgid "Process Change"
+msgstr ""
+
+#: post-meta-manager.php:270 post-meta-manager.php:347
+msgid "Delete Meta Keys"
+msgstr ""
+
+#: post-meta-manager.php:274 post-meta-manager.php:351
+msgid "Meta Key Name"
+msgstr ""
+
+#: post-meta-manager.php:277 post-meta-manager.php:354
+msgid "Enter the meta key name you want to remove"
+msgstr ""
+
+#: post-meta-manager.php:284 post-meta-manager.php:361
+msgid "Delete Keys"
+msgstr ""
+
+#: post-meta-manager.php:292 post-meta-manager.php:368
+msgid "NOTE: this is not reversible! Run a backup of your database if you aren't comfortable doing this."
+msgstr ""
+
+#: post-meta-manager.php:308
+msgid "User Meta Manager"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "Post Meta Manager"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://andrewnorcross.com/plugins/post-meta-manager/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Manage post meta keys in bulk"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "norcross"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://andrewnorcross.com"
+msgstr ""
