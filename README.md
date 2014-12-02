@@ -40,10 +40,8 @@ That is...unfortunate. The process, however, is not reversible. You DID run a ba
 
 ## Screenshots ##
 
-####1. The Post Meta manager for WordPress interface.
-####
-![The Post Meta manager for WordPress interface.
-](https://ps.w.org/post-meta-manager/assets/screenshot-1.png)
+####1. The Post Meta manager for WordPress interface.####
+![The Post Meta manager for WordPress interface.](https://ps.w.org/post-meta-manager/assets/screenshot-1.png)
 
 
 ## Changelog ##
