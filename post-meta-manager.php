@@ -103,10 +103,10 @@ class PMetaManager
 	 */
 	public function menu_settings() {
 		// add the menu item for post meta
-		add_submenu_page( 'tools.php', __( 'Post Meta Manager', 'post-meta-manager' ), __( 'Post Meta Manager', 'post-meta-manager' ), apply_filters( 'pmeta_manager_user_cap', 'manage_options' ), 'pmm-pmeta-settings', array( $this, 'pmm_pmeta_display' ) );
+		add_submenu_page( 'tools.php', _x( 'Post Meta Manager', 'Page title', 'post-meta-manager' ), _x( 'Post Meta Manager', 'Menu title', 'post-meta-manager' ), apply_filters( 'pmeta_manager_user_cap', 'manage_options' ), 'pmm-pmeta-settings', array( $this, 'pmm_pmeta_display' ) );
 
 		// add the menu item for user meta
-		add_submenu_page( 'users.php', __( 'User Meta Manager', 'post-meta-manager' ), __( 'User Meta Manager', 'post-meta-manager' ), apply_filters( 'pmeta_manager_user_cap', 'manage_options' ), 'pmm-umeta-settings', array( $this, 'pmm_umeta_display' ) );
+		add_submenu_page( 'users.php', _x( 'User Meta Manager', 'Page title', 'post-meta-manager' ), _x( 'User Meta Manager', 'Menu title', 'post-meta-manager' ), apply_filters( 'pmeta_manager_user_cap', 'manage_options' ), 'pmm-umeta-settings', array( $this, 'pmm_umeta_display' ) );
 	}
 
 	/**
@@ -228,7 +228,7 @@ class PMetaManager
 	 */
 	public function pmm_pmeta_display() { ?>
 		<div class="wrap">
-		<h2 class="pmm-title"><?php _e( 'Post Meta Manager', 'post-meta-manager' ); ?></h2>
+		<h2 class="pmm-title"><?php _ex( 'Post Meta Manager', 'Title in options page', 'post-meta-manager' ); ?></h2>
 		<div class="pmm-inner">
 
 			<div class="pm-form-content">
