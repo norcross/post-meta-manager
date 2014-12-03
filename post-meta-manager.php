@@ -3,9 +3,10 @@
 Plugin Name: Post Meta Manager
 Plugin URI: http://andrewnorcross.com/plugins/post-meta-manager/
 Description: Manage post meta keys in bulk
-Version: 1.0.2
+Version: 1.0.3
 Author: norcross
 Author URI: http://andrewnorcross.com
+Contributors: norcross, tripflex
 License: GPL v2
 
 	This program is free software; you can redistribute it and/or modify
@@ -27,7 +28,7 @@ if( ! defined( 'PMETA_MANAGER_BASE ' ) ) {
 }
 
 if( ! defined( 'PMETA_MANAGER_VER' ) ) {
-	define( 'PMETA_MANAGER_VER', '1.0.2' );
+	define( 'PMETA_MANAGER_VER', '1.0.3' );
 }
 
 // Start up the engine
@@ -116,6 +117,9 @@ class PMetaManager
 	 */
 	public function key_change() {
 
+		// verify request came from authorized location
+		check_ajax_referer( 'pmm-change', 'nonce' );
+
 		// get keys from POST
 		$old    = ! empty( $_POST['keyold'] ) ? $_POST['keyold'] : false;
 		$new    = ! empty( $_POST['keynew'] ) ? $_POST['keynew'] : false;
@@ -180,6 +184,9 @@ class PMetaManager
 	 * @return PostMetaManager
 	 */
 	public function key_delete() {
+
+		// verify request came from authorized location
+		check_ajax_referer( 'pmm-remove', 'nonce' );
 
 		// get keys from POST
 		$kill   = ! empty( $_POST['keykill'] ) ? $_POST['keykill'] : false;
@@ -259,7 +266,7 @@ class PMetaManager
 				</tbody></table>
 
 				<p class="process change-process">
-					<input id="pmm-change" data-tablename="postmeta" type="button" class="button button-secondary pmm-button" value="<?php _e( 'Process Change', 'post-meta-manager' ); ?>" />
+					<input id="pmm-change" data-nonce="<?php echo wp_create_nonce( "pmm-change" ); ?>" data-tablename="postmeta" type="button" class="button button-secondary pmm-button" value="<?php _e( 'Process Change', 'post-meta-manager' ); ?>" />
 				</p>
 
 			</div>
@@ -281,7 +288,7 @@ class PMetaManager
 				</tbody></table>
 
 				<p class="process remove-process">
-				<input id="pmm-remove" data-tablename="postmeta" type="button" class="button button-secondary pmm-button" value="<?php _e( 'Delete Keys', 'post-meta-manager' ); ?>" />
+				<input id="pmm-remove" data-nonce="<?php echo wp_create_nonce( "pmm-remove" ); ?>" data-tablename="postmeta" type="button" class="button button-secondary pmm-button" value="<?php _e( 'Delete Keys', 'post-meta-manager' ); ?>" />
 				</p>
 
 			</div>
@@ -336,7 +343,7 @@ class PMetaManager
 				</tbody></table>
 
 				<p class="process change-process">
-					<input id="pmm-change" data-tablename="usermeta" type="button" class="button button-secondary pmm-button" value="<?php _e( 'Process Change', 'post-meta-manager' ); ?>" />
+					<input id="pmm-change" data-nonce="<?php echo wp_create_nonce( "pmm-change" ); ?>" data-tablename="usermeta" type="button" class="button button-secondary pmm-button" value="<?php _e( 'Process Change', 'post-meta-manager' ); ?>" />
 				</p>
 
 			</div>
@@ -358,7 +365,7 @@ class PMetaManager
 				</tbody></table>
 
 				<p class="process remove-process">
-				<input id="pmm-remove" data-tablename="usermeta" type="button" class="button button-secondary pmm-button" value="<?php _e( 'Delete Keys', 'post-meta-manager' ); ?>" />
+				<input id="pmm-remove" data-nonce="<?php echo wp_create_nonce( "pmm-remove" ); ?>" data-tablename="usermeta" type="button" class="button button-secondary pmm-button" value="<?php _e( 'Delete Keys', 'post-meta-manager' ); ?>" />
 				</p>
 
 			</div>

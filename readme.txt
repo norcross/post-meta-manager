@@ -1,10 +1,10 @@
 === Post Meta Manager ===
-Contributors: norcross
+Contributors: norcross, tripflex
 Donate link: http://andrewnorcross.com/donate
 Tags: custom field, custom fields, post meta, postmeta, metadata
 Requires at least: 3.0
 Tested up to: 4.0.1
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 
 A simple utility plugin for changing or deleting post or user meta (custom fields) keys in bulk.
 
@@ -37,6 +37,10 @@ That is...unfortunate. The process, however, is not reversible. You DID run a ba
 1. The Post Meta manager for WordPress interface.
 
 == Changelog ==
+
+= 1.0.3 =
+* Added ajax nonce security check
+* Fixed screenshot on GitHub
 
 = 1.0.2 =
 * Added second menu item for removing user meta
