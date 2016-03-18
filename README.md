@@ -7,9 +7,9 @@
 
 **Requires at least:** 3.0
 
-**Tested up to:** 4.0.1
+**Tested up to:** 4.4
 
-**Stable tag:** 1.0.3
+**Stable tag:** 1.0.4
 
 
 A simple utility plugin for changing or deleting post or user meta (custom fields) keys in bulk.
@@ -45,6 +45,10 @@ That is...unfortunate. The process, however, is not reversible. You DID run a ba
 
 
 ## Changelog ##
+
+#### 1.0.4 ####
+* Adding minified versions of CSS and JS files
+* Code cleanup for WP coding standards
 
 #### 1.0.3 ####
 * Added ajax nonce security check

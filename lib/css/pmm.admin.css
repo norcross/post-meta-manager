@@ -1,36 +1,45 @@
-h2.pmm-title {
-    margin: 0 0 0.5em;
-    padding: 9px 25px 4px 0;
+.pmm-message {
+    margin-bottom: 0;
 }
 
-div.pmm-inner {
-    padding: 1em 0 0 1.5em;
+.pmm-inner {
+    padding: 1em 0 0 0;
 }
 
-div.pm-form-options {
-    margin: 0 0 2em;
+.pm-form-wrapper {
+    margin: 0;
+    padding: 1.8em 0;
+    border-top: 1px solid #ccc;
 }
 
-div.pm-form-options p.process {
+.pm-form-wrapper-delete {
+    border-bottom: 1px solid #ccc;
+}
+
+.pm-form-wrapper h3 {
+    margin-top: 0;
+}
+
+.pm-form-options p.process {
     margin: 1.5em 0 0;
 }
 
-div.pm-form-options div#message {
+.pm-form-options #message {
     width: 550px;
 }
 
-div.pm-form-options div#message p {
+.pm-form-options #message p {
     margin: 0;
     font-style: italic;
     text-align: center;
 }
 
-div.pm-form-content {
+.pm-form-content {
     max-width: 70%;
     margin: 0 0 2em;
 }
 
-div.pm-form-content p.warning {
-    margin: 50px 0 0;
+.pm-form-content p.warning {
     font-size: 130%;
+    font-weight: bold;
 }
